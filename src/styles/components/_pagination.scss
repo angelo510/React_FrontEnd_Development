@@ -1,0 +1,37 @@
+.pagination {
+    margin: 0;
+    margin-top: 1rem;
+    padding: 0;
+    font-size: 0.8rem;
+    li {
+        a {
+            color: lightgray;
+            i {
+                bottom: 0.4rem;
+                font-size: 2rem;
+                left: 0.5rem;
+            }
+            border-radius: 6px;
+            margin: 0 0.3rem;
+            &.active {
+                background-color: #347EF6;
+            }
+            &.disabled.icon {
+                color: #CDD1D7;
+                cursor: not-allowed;
+                &:hover {
+                    color: #CDD1D7;
+                }
+            }
+            &.active.icon {
+                color: #347EF6;
+            }
+            &.icon {
+                background-color: #F1F4FD;
+                border: none;
+                padding: 0;
+                position: relative;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.carousel-modal {
+  .carousel-modal__close-button {
+    @extend .color-white;
+    @extend .text-uc;
+    @extend .pull-right;
+    @extend .pat;
+
+    background-color: transparent;
+  }
+
+  .carousel-modal__owl-tile {
+    @extend .full-width;
+    @extend .flex-row;
+    @extend .flex-hc;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 24rem;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      background-image: linear-gradient(0deg,rgba(33,38,45,.9) 0,rgba(33,38,45,.81) 11%,rgba(33,38,45,0));
+    }
+
+    img {
+      @extend .full-width;
+      @extend .full-height;
+
+      object-fit: cover;
+      max-width: 38rem;
+      z-index: 2;
+    }
+  }
+
+  .owl-wrapper-outer {
+    &:after, &:before {
+      top: 11.5rem;
+    }
+  }
+
+  .owl-carousel .owl-prev, .owl-carousel .owl-next {
+    top: 11.5rem;
+  }
+}

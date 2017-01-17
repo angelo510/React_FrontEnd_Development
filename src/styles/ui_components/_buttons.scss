@@ -1,0 +1,81 @@
+@mixin pl-btn () {
+  @extend .text-center;
+  cursor: pointer;
+  display: inline-block;
+  padding: 1rem 3rem;
+  text-transform: uppercase;
+
+  &[disabled] {
+    opacity: 0.8;
+  }
+}
+
+.pl-btn-primary {
+  @include pl-btn();
+
+  @extend .color-white;
+  @extend .color-bg-primary-brand;
+
+  &:hover {
+    @extend .color-white;
+    @extend .color-bg-highlight-primary-brand;
+  }
+}
+
+.pl-btn-light {
+  @include pl-btn();
+
+  @extend .color-primary-brand;
+  @extend .color-bg-light-blue;
+
+  &:hover {
+    @extend .color-white;
+    @extend .color-bg-primary-brand;
+  }
+}
+
+.pl-btn-light-grey {
+  @include pl-btn();
+
+  @extend .color-dark-grey;
+  @extend .color-bg-lighter-grey;
+
+  &:hover {
+    @extend .color-bg-white;
+  }
+}
+
+.pl-btn-grey {
+  @include pl-btn();
+
+  @extend .color-dark-grey;
+  @extend .color-bg-light-grey;
+
+  &:hover {
+    @extend .color-white;
+    @extend .color-bg-dark-blue;
+  }
+}
+
+.pl-btn-dark {
+  @include pl-btn();
+
+  @extend .t4;
+  @extend .color-white;
+  @extend .color-bg-dark-blue;
+
+  &:hover {
+    @extend .color-white;
+    @extend .color-bg-highlight-dark-blue;
+  }
+}
+
+.blue-link {
+  @extend .color-primary-brand;
+
+  cursor: pointer;
+
+  &:hover {
+    @extend .color-highlight-primary-brand;
+  }
+}

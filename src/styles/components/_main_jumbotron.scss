@@ -1,0 +1,40 @@
+.main-jumbotron {
+
+  .main-jumbotron__text-container {
+    flex: 2;
+
+    @include desktop {
+      .main-jumbotron__text {
+        max-width: 75%;
+      }
+    }
+  }
+
+  .main-jumbotron__image-container {
+    flex: 1;
+
+    &:after {
+      background-image: url('../../../assets/images/jumbotron-main.jpg');
+      background-size: cover;
+      background-position: 46%;
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+
+      @include mobile {
+        height: 20rem;
+      }
+
+      @include tablet {
+        height: 20rem;
+      }
+    }
+  }
+
+  .main-jumbotron__divider {
+    @extend .color-bd-white;
+    @extend .mvm;
+    width: 50px;
+  }
+}

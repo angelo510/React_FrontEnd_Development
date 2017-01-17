@@ -1,0 +1,113 @@
+.venue-header {
+  @extend .color-white;
+
+  background: no-repeat center 65%;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+
+  .venue-section {
+    height: 528px;
+    z-index: 1;
+
+    .venue-section-title {
+      margin-top: 0;
+    }
+  }
+
+  .venue-price-bubble {
+    background-image: url('../../../assets/icons/btn-full.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-width: 4.16rem;
+    text-align: center;
+    height: 4.45rem;
+    line-height: 4.45rem;
+
+    .venue-currency {
+      @extend .t5;
+
+      margin-right: 1px;
+      position: relative;
+      top: -0.5rem;
+    }
+
+    .venue-price {
+      @extend .t3;
+      @extend .em-high;
+    }
+  }
+
+  .venue-price-divider {
+    background-image: url('../../../assets/icons/hex-white.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 1.66rem;
+    height: 1.83rem;
+    position: absolute;
+    margin-top: 21px;
+
+    i {
+      @extend .color-primary-brand;
+      font-size: .7rem;
+      margin-left: 6px;
+      line-height: 1.9rem;
+    }
+  }
+
+  .venue-price-divider:before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26.34 21.01'%3E%3Ctitle%3EVector Smart Object1%3C/title%3E%3Cpolyline points='15.83 1 25.34 10.51 15.83 20.01' style='fill:none;stroke:%230e7dff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px'/%3E%3Cline x1='1' y1='10.51' x2='25.34' y2='10.51' style='fill:none;stroke:%230e7dff;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px'/%3E%3C/svg%3E");
+  }
+
+  .venue-header__image-section {
+    flex: 3;
+  }
+
+  .venue-header__information-section {
+    flex: 2;
+    background-color: rgba(14, 125, 255, 0.83);
+
+    > div {
+      padding: 3.25rem;
+    }
+
+    .venue-attribute {
+      @extend .flex-row;
+      @extend .mvs;
+
+      a:hover {
+        opacity: 0.8;
+      }
+
+      i {
+        @extend .color-dark-grey;
+        @extend .t3;
+      }
+
+      .venue-attribute-text {
+        @extend .mlm;
+
+        user-select: text;
+        -webkit-user-select: text;
+        -moz-user-select: text;
+        -ms-user-select: text;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: calc(100% - 3rem);
+      }
+    }
+  }
+}
+
+.venue-header:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  background-image: linear-gradient(to top, rgba(33, 38, 45, 0.9) 0%, rgba(33, 38, 45, 0.81) 11%, rgba(33, 38, 45, 0) 100%);
+}

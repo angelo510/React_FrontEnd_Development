@@ -1,0 +1,26 @@
+.profile-navigation {
+  @extend .max-width;
+  @extend .flex-col;
+  @extend .flex-row-desktop;
+  @extend .flex-hb;
+
+  .profile-navigation_row {
+    @extend .flex-row;
+    @extend .flex-col-mobile;
+    @extend .full-width-mobile;
+    @extend .text-center-mobile;
+    @extend .flex-hc-mobile;
+    @extend .text-uc;
+
+    .profile-navigation_link {
+      @extend .mhs;
+      @extend .mvt-mobile;
+
+      cursor: pointer;
+
+      a:hover {
+        @extend .color-primary-brand;
+      }
+    }
+  }
+}

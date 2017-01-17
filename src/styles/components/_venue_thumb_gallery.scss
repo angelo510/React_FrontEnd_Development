@@ -1,0 +1,40 @@
+.venue-thumbnails {
+  @extend .flex-row;
+
+  .venue-thumbnails__thumbnail-container {
+    max-width: 10rem;
+    width: 100%;
+  }
+
+  .venue-thumbnails__thumbnail {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    height: 6.25rem;
+    position: relative;
+
+    &:hover {
+      &:after {
+        @extend .color-white;
+        content: $icon-fullscreen;
+        font-family: playven-icons, serif;
+        font-size: 2rem;
+        position: absolute;
+        z-index: 1;
+        top: calc(50% - 0.75rem);
+        left: calc(50% - 1rem);
+      }
+    }
+
+    &:hover {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        transition: all 0.2s ease-in-out;
+        background-color: rgba(33, 38, 45, 0.25);
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.footer {
+  @extend .color-bg-white;
+  @extend .color-light-grey;
+  @extend .flex-row;
+  @extend .flex-hc;
+  @extend .pam;
+
+  .footer__container {
+    @extend .flex-col;
+    @extend .pbl;
+    width: 100%;
+
+    @include desktop {
+      width: 80%;
+      margin: auto;
+    }
+  }
+}
+
+.footer-icon-logo {
+  background-image: url("../../../assets/images/app-logo.png");
+  width: 74px;
+  height: 74px;
+  position: relative;
+  top: 40px;
+  margin: 0px 20px;
+}
+
+
+.footer-social-link {
+  @extend .mlt;
+
+  :hover {
+    @extend .color-primary-brand;
+  }
+}

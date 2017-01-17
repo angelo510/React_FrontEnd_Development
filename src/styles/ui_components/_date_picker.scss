@@ -1,0 +1,90 @@
+.react-datepicker__input-container {
+  @extend .color-bg-white;
+
+  input {
+    @extend .color-dark-grey;
+    @extend .full-width;
+
+    border: none;
+    height: 3rem;
+    line-height: 3rem;
+    padding: 0 1.5rem;
+    position: relative;
+  }
+
+  &:after {
+    @extend .t3;
+    @extend .color-lighter-grey;
+
+    content: $icon-calendar;
+    font-family: playven-icons, serif;
+    position: absolute;
+    top: 0.7rem;
+    right: 1.15rem;
+  }
+}
+
+.react-datepicker {
+  @extend .color-bd-lighter-grey;
+
+  border-radius: 0;
+
+  .react-datepicker__triangle, .react-datepicker__triangle:before {
+    border-bottom-color: map_get($color-map, 'primary-brand');
+    top: 0.05rem;
+  }
+
+  .react-datepicker__header {
+    border-bottom: none;
+    padding-top: 0;
+
+    .react-datepicker__current-month {
+      @extend .color-bg-primary-brand;
+      @extend .color-white;
+      @extend .text-uc;
+      @extend .em-high;
+      @extend .pas;
+    }
+
+    .react-datepicker__day-names {
+      @extend .pts;
+      @extend .color-bg-white;
+
+      .react-datepicker__day-name {
+        @extend .color-primary-brand;
+        @extend .em-high;
+      }
+    }
+  }
+
+  .react-datepicker__day--selected, .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range {
+    position: relative;
+    background-color: transparent;
+    z-index: 1;
+
+    &:after {
+      @extend .color-primary-brand;
+
+      content: $icon-hex;
+      font-family: playven-icons, serif;
+      font-size: 1.875rem;
+      position: absolute;
+      right: 0;
+      z-index: -1;
+    }
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}
+
+.react-datepicker__navigation--previous {
+  border-right-color: white;
+  margin-top: 0.7rem;
+}
+
+.react-datepicker__navigation--next {
+  border-left-color: white;
+  margin-top: 0.7rem;
+}

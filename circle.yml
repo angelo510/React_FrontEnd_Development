@@ -1,0 +1,20 @@
+machine:
+  timezone: Europe/Helsinki
+  node:
+    version: 6
+dependencies:
+  pre:
+    - npm install
+  cache_directories:
+    - node_modules
+test:
+  override:
+    - npm run test
+    - npm run compile:prod
+  post:
+    - bash <(curl -s https://codecov.io/bash) -t 2163b43b-1d09-4b1b-90aa-ca91e941e389
+deployment:
+  prod:
+    branch: master
+    commands:
+      - aws s3 sync dist s3://playven.com --delete

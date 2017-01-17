@@ -1,0 +1,45 @@
+$color-map: (
+  'white': #ffffff,
+  'highlight-white': #c1cffb,
+  'lighter-grey': #e1e7ee,
+  'light-grey': #b7b7b7,
+  'highlight-grey': #9fa5ad,
+  'grey': #85898f,
+  'dark-grey': #21262d,
+  'red': #d9534f,
+  'light-blue': #f1f4fe,
+  'primary-brand': #0e7dff,
+  'highlight-primary-brand': #4199ff,
+  'dark-blue': #222645,
+  'highlight-dark-blue': #333967
+);
+
+@mixin color-classes($color-name, $color) {
+  .color-#{$color-name} {
+    color: $color;
+  }
+
+  .color-bg-#{$color-name} {
+    background-color: $color;
+  }
+
+  .color-bd-#{$color-name} {
+    border: 1px solid $color;
+  }
+
+  .color-bdt-#{$color-name} {
+    border-top: 1px solid $color;
+  }
+
+  .color-bdb-#{$color-name} {
+    border-bottom: 1px solid $color;
+  }
+
+  .color-bdl-#{$color-name} {
+    border-left: 1px solid $color;
+  }
+}
+
+@each $color-name, $color in $color-map {
+  @include color-classes($color-name, $color);
+}

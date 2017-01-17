@@ -1,0 +1,46 @@
+.booking_slot {
+  @extend .flex-row;
+  @extend .flex-hb;
+  @extend .flex-vc;
+  @extend .color-dark-grey;
+  @extend .color-bg-light-blue;
+  @extend .text-uc;
+
+  cursor: pointer;
+  max-height: 20rem;
+  padding: 1.5rem;
+  overflow: auto;
+
+  &:hover {
+    @extend .color-bg-lighter-grey;
+  }
+
+  &.active {
+    @extend .color-white;
+    @extend .color-bg-primary-brand;
+
+    .booking_slot__time, .booking_slot__price, .booking_slot__arrow, .booking_slot__price:before {
+      @extend .color-white;
+    }
+
+    .booking_slot__price {
+      @extend .color-primary-brand;
+    }
+  }
+
+  .booking_slot__time {
+    @extend .em-high;
+    @extend .color-primary-brand;
+    @extend .t3;
+  }
+
+  .booking_slot__venue_name {
+    @extend .t5;
+    @extend .text-uc;
+  }
+
+  .booking_slot__arrow {
+    @extend .color-primary-brand;
+    @extend .t6;
+  }
+}

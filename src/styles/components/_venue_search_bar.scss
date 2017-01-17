@@ -1,0 +1,29 @@
+.venue-search-bar {
+  @extend .color-bg-white;
+  @extend .flex-row;
+  @extend .flex-col-mobile;
+  @extend .flex-vc-desktop;
+  @extend .max-width;
+
+  > div {
+    @extend .flex;
+
+    border-left: 1px solid map_get($color-map, 'lighter-grey');
+
+    &:last-child, &:first-child {
+      border-left: none;
+    }
+  }
+
+  @include lt-desktop {
+    > div {
+      border-left: none;
+    }
+  }
+}
+
+#home-view .venue-search-bar {
+  position: relative;
+  top: -1.8rem;
+  box-shadow: 0 0 0 0.25rem rgba(34, 38, 69, 0.1);
+}

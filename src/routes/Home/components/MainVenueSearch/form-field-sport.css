@@ -1,0 +1,19 @@
+.select2-container--default .select2-results__option--highlighted .sport-invisible {
+  display: inline-block !important;
+}
+
+.select2-container--default .select2-results__option--highlighted  .sport-visible {
+  display: none;
+}
+
+.select2-container--default .select2-results__option[aria-selected=true] .sport-invisible {
+  display: inline-block !important;
+}
+
+.select2-container--default .select2-results__option[aria-selected=true] .sport-visible {
+  display: none;
+}
+
+.sport-invisible {
+  display: none;
+}

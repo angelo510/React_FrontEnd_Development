@@ -1,0 +1,108 @@
+pages:
+  home:
+    main_title: "SINUN TENNISKENTTÄSI"
+    main_subtitle: "Löydä vapaat kentät läheltäsi ja varaa helposti"
+    join_header: "Playven on uusi tapa löytää lähialueesi vapaat tenniskentät ja tehdä varaus helposti"
+    join_content: "Playven on pilottivaiheessa ja olemme aloittaneet palvelun ensimmäisenä mm. Kalastatorpan Tennisklubin, Aktia-Tennishallin, ja Martinmäen Tenniskeskuksen kanssa. Uusia keskuksia liittyy mukaan jatkuvasti. Voit auttaa meitä saamaan useampia mukaan kertomalla Playvenista sinun suosikkipaikallesi."
+    join_button: "Liity Playveniin"
+    sports_list: "Keskuksia Helsingissä"
+  profile:
+    navigation:
+        edit_profile: "Muokkaa profiilia"
+        my_reservations: "Varaukseni"
+        my_recurring_reservations: "Vakiovuorot"
+        future_reservations: "Tulevat"
+        past_reservations: "Vanhat"
+        future_memberships: "Tulevat"
+        past_memberships: "Vanhat"
+        reselling_reservations: "Myynnissä"
+        resold_reservations: "Myydyt"
+    edit_form:
+      title: "Muokkaa tietojasi"
+      save: "Tallenna"
+      add_new: "Lisää uusi"
+      payment_title: "Maksutapa"
+      change_password: "Vaihda salasana"
+    no_results: "Ei tuloksia"
+    your_profile: "Profiilisi"
+  venues:
+    about_venue: "Tietoa keskuksesta"
+    check_times: "Etsi aikoja"
+    opening_hours: "Aukioloajat"
+    map: "Kartta"
+    cancelled: "Peruutettu"
+    cancel_reservation_link: "myydä varaus"
+    cant_cancel_reservation_message: "Varausta ei voi perua"
+    resell_reservation_link: "Jälleenmyydä varaus"
+    cant_resell_reservation_message: "Ei voi myydä varausta"
+    add_to_calendar: "Lisää kalenteriin"
+nav:
+  search_venues: "Etsi keskuksia"
+  register: "Rekisteröidy"
+  login: "Kirjaudu sisään"
+  logout: "Kirjaudu ulos"
+  help: "Ohje"
+footer:
+    help: "Ohje"
+    careers: "Urat"
+    terms: "Käyttöehdot"
+    privacy: "Tietosuojakäytäntö"
+    find_new_friends: "Löydä uusia pelikavereita urheilemaan"
+    download_app: "Lataa appi"
+    on_iphone: "iPhonelle"
+    follow: "Seuraa meitä"
+components:
+    venue_search:
+        submit: "Etsi aikoja"
+modals:
+    success:
+        make_another: "Tee uusi"
+        text: "Varaus on lisätty profiilisi varauksiin"
+        title: "Onnistunut varaus"
+        view_booking: "Näytä varaus"
+    payment:
+        add_new: "Lisää uusi"
+        title: "Maksu"
+        book_text: "Olet tekemässä varauksen"
+        court_count: "Kentt(i)ä yhteishintaan"
+        pay_button: "Maksa"
+        skip_payment: "Maksa paikanpäällä"
+    not_logged:
+        login: "Kirjaudu sisään"
+        modal_text: "Sinun pitää olla kirjautunut sisään tehdäksesi varauksen"
+        signup: "Rekisteröidy"
+        title: "Hupskeikkaa..."
+    signup:
+        facebook: "Rekisteröidy FB:llä"
+        or: "tai"
+        signup: "Rekisteröidy"
+    login:
+        forgot_password: "Unohditko?"
+        signup: "Rekisteröidy"
+        signup_message: "Eikö sinulla ole tiliä?"
+        login: "Kirjaudu sisään"
+        login_fb: "Kirjaudu Facebookilla"
+        or: "tai"
+        forgot_your_password: "UNOHDITKO SALASANASI?"
+        reset_password_instructions: "Lähetä ohjeet salasanan resetointiin"
+    booking:
+        available: "Kenttää vapaana"
+        availability_on: "Saatavuus"
+        info_1: "Valitse mikä tahansa aikaväli ja siihen sopivat kentät aloittaaksesi varaamisen. Sen jälkeen valitse sinulle sopivin aika ja kenttä."
+        info_2: "Kaikki valitut varaukset näkyvät alhaalla, ja voit lisää tai poistaa niitä milloin tahansa"
+        info_title: "Aloita varaaminen"
+        book: "Varaa"
+        error: "Hups. :( Valitsemallesi päivälle ei ole vapaita kenttiä. Valitse toinen päivä tai keskus."
+messages:
+    register:
+        success: "Rekisteröinti onnistui"
+    login:
+        success: "Kirjautuminen onnistui"
+    errors:
+        no_courts_selected: "Valitse kenttä"
+        enter_current_password: "Anna nykyinen salasana"
+        password_mismatch: "Salasanat eivät täsmää"
+        fill_all_fields: "Ole hyvä, ja täytä kaikki kentät"
+        short_password: "Salasanan täytyy olla vähintään 8 merkkiä pitkä"
+general:
+    ending: "Päättyy"

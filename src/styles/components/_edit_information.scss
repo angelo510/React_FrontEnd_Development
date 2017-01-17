@@ -1,0 +1,15 @@
+.edit-information {
+  .edit-information__section {
+    @extend .flex-row;
+    @extend .flex-vc;
+    @extend .mbm;
+    @extend .pvt;
+    @extend .color-bdb-lighter-grey;
+  }
+
+  .edit-information__section-title {
+    @extend .flex;
+    @extend .text-uc;
+    @extend .color-dark-grey;
+  }
+}

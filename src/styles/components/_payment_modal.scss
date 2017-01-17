@@ -1,0 +1,21 @@
+.payment-modal {
+  .payment-modal__image {
+    font-size: 8rem;
+  }
+
+  .payment-modal__spinner {
+    @extend .flex-row;
+    @extend .flex-vc;
+
+    height: 10rem;
+  }
+
+  .inline-span {
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+  }
+
+  .change-card {
+    padding: 0;
+  }
+}

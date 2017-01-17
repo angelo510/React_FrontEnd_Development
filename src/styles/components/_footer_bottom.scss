@@ -1,0 +1,46 @@
+.footer-links {
+  @extend .text-right-lt-desktop;
+
+  :hover {
+    @extend .color-highlight-grey;
+  }
+}
+
+.footer-language-selector {
+  img {
+    @extend .mrt;
+
+    height: 1.25rem;
+    vertical-align: middle;
+  }
+
+  .dropdown-menu {
+    padding: 0;
+    border-radius: 0.33rem;
+  }
+
+  .footer-language-selector-choices button {
+    @extend .full-width;
+    @extend .t4;
+    @extend .pvs;
+    @extend .pht;
+
+    display: block;
+
+    &:hover {
+      @extend .color-white;
+      @extend .color-bg-primary-brand;
+    }
+
+    &:first-child {
+      border-top-left-radius: 0.33rem;
+      border-top-right-radius: 0.33rem;
+    }
+
+    &:last-child {
+      border-bottom-right-radius: 0.33rem;
+      border-bottom-left-radius: 0.33rem;
+    }
+  }
+}
+

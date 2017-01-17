@@ -1,0 +1,35 @@
+.booking-modal__header {
+  @extend .color-white;
+  @extend .color-bg-primary-brand;
+
+  input {
+    @extend .color-white;
+    @extend .color-bg-primary-brand;
+    cursor: pointer;
+  }
+
+  .react-datepicker__input-container {
+    max-width: 12rem;
+    border-bottom: 2px solid map_get($color-map, 'dark-grey');
+
+    &:hover {
+      border-bottom: 2px solid map_get($color-map, 'white');
+    }
+
+    &:after {
+      @extend .color-dark-grey;
+      content: $icon-down-arrow;
+
+      font-size: 0.3rem;
+      right: 0.3rem;
+      top: 0.5rem;
+    }
+
+    input {
+      @extend .color-white;
+      padding: 0;
+      line-height: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+}

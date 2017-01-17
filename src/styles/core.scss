@@ -1,0 +1,82 @@
+// Import vendor libraries from node_modules here
+@import '~bootstrap/dist/css/bootstrap';
+@import '~react-datepicker/dist/react-datepicker.css';
+@import '~select2/dist/css/select2.min.css';
+@import '~toastr/build/toastr.min.css';
+@import 'fonts/lato/lato.css';
+@import '~sweetalert/dist/sweetalert.css';
+@import 'font-awesome/css/font-awesome.min.css';
+
+// Bases classes are fundamental building blocks based on the site design
+@import 'base/reset';
+@import 'base/breakpoints';
+@import 'base/typography';
+@import 'base/colors';
+@import 'base/layout';
+@import 'base/spacing';
+@import 'base/playven_icons';
+
+// UI Components are generic and reusable, and only relies on base and vendor css
+@import 'ui_components/buttons';
+@import 'ui_components/carousel';
+@import 'ui_components/date_picker';
+@import 'ui_components/inputs';
+@import 'ui_components/modals';
+@import 'ui_components/select2';
+
+// Components can rely on UI components, base, and vendor css
+@import 'components/booking_court';
+@import 'components/booking_modal_header';
+@import 'components/booking_modal_venue_sports_list';
+@import 'components/booking_modal';
+@import 'components/booking_slot';
+@import 'components/carousel_model';
+@import 'components/edit_information';
+@import 'components/footer_bottom';
+@import 'components/footer_top';
+@import 'components/footer';
+@import 'components/home_view';
+@import 'components/login_modal';
+@import 'components/main_jumbotron';
+@import 'components/navigation';
+@import 'components/pagination';
+@import 'components/payment_modal';
+@import 'components/price_bubble';
+@import 'components/profile_navigation';
+@import 'components/search';
+@import 'components/success_modal';
+@import 'components/unauthenticated_modal';
+@import 'components/venue_carousel_item';
+@import 'components/venue_category';
+@import 'components/venue_information';
+@import 'components/venue_results_item';
+@import 'components/venue_results';
+@import 'components/venue_search_bar';
+@import 'components/venue_thumb_gallery';
+@import 'components/venue_view_bottom';
+@import 'components/venue_view_middle';
+@import 'components/venue_view_top';
+@import 'components/unauthenticated_modal';
+@import '~ladda/css/ladda.scss';
+
+
+// Default page settings
+html {
+  font-size: 16px;
+
+  // Since we use rem for all font, height, and width measurements,
+  // this decreases the spacing when viewed on a small screen
+  @include mobile {
+    font-size: 14px;
+  }
+}
+
+body {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  @extend .t4;
+  @extend .color-bg-light-blue;
+  @extend .color-grey;
+  @extend .flex-col;
+
+  min-height: 100vh;
+}

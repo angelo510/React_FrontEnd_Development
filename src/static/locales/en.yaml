@@ -1,0 +1,109 @@
+pages:
+  home:
+    main_title: "YOUR SPORTS COMPANION"
+    main_subtitle: "Find nearby tennis courses and reserve with ease"
+    join_header: "Book your game times for racket sports with Playven"
+    join_content: "Playven is the easiest way to find available courts in your area. You can book available courts in all nearby joined clubs with our easy search. We hope you enjoy Playven!"
+    join_button: "JOIN PLAYVEN"
+    sports_list: "Venues in Helsinki"
+  profile:
+    navigation:
+      edit_profile: "Edit profile"
+      my_reservations: "My reservations"
+      my_recurring_reservations: "My recurring reservations"
+      future_reservations: "Future"
+      past_reservations: "Past"
+      future_memberships: "Future"
+      past_memberships: "Past"
+      reselling_reservations: "Reselling"
+      resold_reservations: "Resold"
+    edit_form:
+      title: "Edit information"
+      save: "Save"
+      add_new: "Add new"
+      payment_title: "Payment method"
+      change_password: "Change password"
+    no_results: "No results found"
+    your_profile: "Your profile"
+  venues:
+    about_venue: "About venue"
+    check_times: "Check times"
+    opening_hours: "Opening hours"
+    map: "Map"
+    cancelled: "Cancelled"
+    cancel_reservation_link: "Cancel reservation"
+    resell_reservation_link: "Resell Reservation"
+    cant_cancel_reservation_message: "Can't cancel reservation"
+    cant_resell_reservation_message: "Can't resell reservation"
+    add_to_calendar: "Add  to calendar"
+nav:
+  search_venues: "Search venues"
+  register: "Register"
+  login: "Log in"
+  logout: "Log out"
+  help: "Help"
+footer:
+  help: "Help"
+  careers: "Careers"
+  terms: "Terms and conditions"
+  privacy: "Privacy policy"
+  find_new_friends: "Find new friends to play sports with"
+  download_app: Download app
+  on_iphone: "on iOS"
+  follow: "Follow us"
+components:
+    venue_search:
+      submit: "Find Venues"
+modals:
+    success:
+      make_another: "Make another"
+      text: "Booking has been added to reservations on your profile"
+      title: "Booking successful"
+      view_booking: "View booking"
+    payment:
+      add_new: "Add new"
+      title: "Payment"
+      book_text: "You are about to book"
+      court_count: "Court(s) with total price of"
+      pay_button: "Pay"
+      no_card_msg: "You dont have any credit cards on your account."
+      skip_payment: "Pay Onsite"
+    not_logged:
+      login: "Log in"
+      modal_text: "You have to be logged in to make a reservation."
+      signup: "Sign Up"
+      title: "Oops..."
+    signup:
+      facebook: "Signup with facebook"
+      or: "or"
+      signup: "Signup"
+    login:
+      forgot_password: "Forgot ?"
+      signup: "Signup"
+      signup_message: "Don’t have an account?"
+      login: "log in"
+      login_fb: "log in with facebook"
+      or: "or"
+      forgot_your_password: "FORGOT YOUR PASSWORD?"
+      reset_password_instructions: "Send me reset password instructions"
+    booking:
+      available: "Courts available"
+      availability_on: "Availability on"
+      info_1: "Choose any of the time slots you wish along with their corresponding available courts to begin your booking. Then choose the best time slot or court that works best for you."
+      info_2: "All chosen bookings will appear at the bottom which you add and delete at any time"
+      info_title: "Let’s start booking"
+      book: "Book"
+      error: "No courts found"
+messages:
+    register:
+        success: "Registeration succesful"
+    login:
+        success: "Login succesful"
+    errors:
+        no_courts_selected: "Pick a court"
+        enter_current_password: "Enter current password"
+        password_mismatch: "Password mismatch"
+        fill_all_fields: "Please, fill all fields"
+        short_password: "New password must have at least 8 symbols"
+general:
+    ending: "Ending in"

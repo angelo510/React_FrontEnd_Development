@@ -1,0 +1,95 @@
+.booking-modal {
+  @include desktop {
+    width: 84%;
+    max-width: 75rem;
+
+    .booking-modal__slot-picker {
+
+      .booking-modal__available_times {
+        width: 100%;
+        max-width: 25rem;
+        background-color: map_get($color-map, 'light-blue');
+        min-height: 22rem;
+      }
+
+      .booking-modal__available-courts {
+        width: 100%;
+      }
+    }
+
+    .booking-modal__footer {
+      min-height: 5.75rem;
+
+      .booking-modal__book-button {
+        min-height: 5.75rem;
+        padding-left: 7rem;
+        padding-right: 7rem;
+      }
+    }
+  }
+
+  .booking-modal__close-button {
+    @extend .color-white;
+    @extend .text-uc;
+    @extend .pull-right;
+    @extend .pat;
+
+    background-color: transparent;
+  }
+
+  .booking-modal__slot-picker {
+
+    .booking-modal__available_times {
+      max-height: 24rem;
+      overflow: scroll;
+      z-index: 2;
+    }
+
+    .booking-modal__available-courts {
+      min-height: 7rem;
+      overflow: hidden;
+      position: relative;
+
+      .spinner {
+        font-size: 3rem;
+      }
+
+      &:before {
+        @extend .color-light-blue;
+        content: $icon-logo;
+        font-family: playven-icons, serif;
+        position: absolute;
+        z-index: 1;
+        font-size: 10rem;
+        right: -2.4rem;
+        bottom: 1rem;
+
+        @include desktop {
+          font-size: 24rem;
+          right: -6rem;
+          bottom: 4.5rem;
+        }
+      }
+
+      .booking-modal__available-courts-list {
+        z-index: 2;
+      }
+    }
+  }
+
+  .modal-content {
+    @extend .mlm;
+
+    .booking-modal__content {
+      @extend .flex-col;
+
+      background-color: transparent;
+    }
+
+    .booking-modal__footer {
+      z-index: 2;
+
+      background: rgba(34,38,69,0.8);
+    }
+  }
+}

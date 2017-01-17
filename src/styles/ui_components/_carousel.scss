@@ -1,0 +1,92 @@
+@include desktop {
+  .owl-wrapper-outer {
+    &:after, &:before {
+      color: map_get($color-map, 'light-blue');
+
+      content: $icon-hex;
+      font-family: playven-icons, serif;
+      font-size: 5.25rem;
+      position: absolute;
+      top: 9.5rem;
+      z-index: 1;
+    }
+
+    &:before {
+      left: -2.35rem;
+    }
+
+    &:after {
+      right: -2.35rem;
+    }
+  }
+}
+
+.owl-carousel {
+  .owl-prev {
+    left: -.95rem;
+
+    &:after {
+      content: $icon-left-arrow;
+      left: 0.75rem;
+    }
+
+    &:before {
+      transform: rotate(-120deg);
+    }
+
+    &:hover:before {
+      transform: rotate(120deg);
+    }
+  }
+
+  .owl-next {
+    right: 1.1rem;
+
+    &:after {
+      content: $icon-right-arrow;
+      right: -1.4rem;
+    }
+
+    &:before {
+      transform: rotate(120deg);
+    }
+
+    &:hover:before {
+      transform: rotate(-120deg);
+    }
+  }
+
+  .owl-prev, .owl-next {
+    position: absolute;
+    margin: auto;
+    top: 9.5rem;
+    z-index: 2;
+
+    &:after {
+      @extend .color-white;
+
+      font-family: playven-icons, serif;
+      font-size: .8rem;
+      position: absolute;
+    }
+
+    &:before {
+      @extend .color-dark-blue;
+
+      content: $icon-hex;
+      font-family: playven-icons, serif;
+      font-size: 2.25rem;
+      position: absolute;
+
+      transform-origin: 50% 50%;
+      transition: all .5s ease-out;
+    }
+
+    &:hover:before {
+      @extend .color-primary-brand;
+
+      transform-origin: 50% 50%;
+      transition: all .5s ease-in;
+    }
+  }
+}

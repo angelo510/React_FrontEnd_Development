@@ -1,0 +1,52 @@
+.unauthenticated-modal {
+  .unauthenticated-modal__image {
+    font-size: 8rem;
+  }
+
+  .unauthenticated-modal__buttons {
+    @extend .flex-row;
+    @extend .flex-col-mobile;
+    @extend .mts;
+
+    button {
+      @extend .t5;
+      @extend .pht;
+    }
+
+    .unauthenticated-modal__button-one {
+      @extend .flex;
+      @extend .pl-btn-dark;
+      @extend .color-bd-primary-brand;
+
+      position: relative;
+
+      .unauthenticated-modal__buttons-divider {
+        @extend .color-dark-grey;
+        position: absolute;
+        right: -0.6rem;
+        top: 1rem;
+        text-transform: none;
+        opacity: .99;
+
+        &:before {
+          @extend .color-white;
+          content: $icon-hex;
+          font-family: playven-icons, serif;
+          font-size: 2rem;
+          position: absolute;
+          z-index: -1;
+          right: -0.4rem;
+        }
+
+        @include mobile {
+          right: 2rem;
+          top: 2.7rem;
+        }
+      }
+    }
+    .unauthenticated-modal__button-two {
+      @extend .flex;
+      @extend .pl-btn-primary;
+    }
+  }
+}

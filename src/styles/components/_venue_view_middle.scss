@@ -1,0 +1,18 @@
+.venue-section-title {
+  @extend .color-dark-grey;
+  @extend .t3;
+  @extend .em-high;
+  @extend .mvm;
+  @extend .text-uc;
+}
+
+
+.venue-middle {
+  .venue-middle__about-section {
+    flex: 2;
+  }
+
+  .venue-middle__check-times-section {
+    flex: 1;
+  }
+}

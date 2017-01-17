@@ -1,0 +1,116 @@
+#navigation {
+  min-height: 4.375rem;
+}
+
+#navigation-toggle {
+  @extend .t3;
+  @extend .pas;
+  @extend .color-dark-grey;
+  @extend .hide-gt-mobile;
+
+  position: absolute;
+}
+
+#navigation-menu {
+  @extend .color-bg-white;
+  @extend .flex-col-mobile;
+  @extend .flex-row;
+  @extend .flex-wrap;
+  @extend .flex-vc;
+
+  border-top: 2px solid map_get($color-map, 'white');
+  border-bottom: 2px solid map_get($color-map, 'white');
+  min-height: 4.375rem;
+
+  > div {
+    @extend .full-height;
+    @extend .phs;
+    @extend .flex-row;
+    @extend .flex-vc;
+
+    height: 4.375rem;
+  }
+
+  .navigation-button {
+    border-radius: 2rem;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+    text-transform: none;
+
+    span {
+      margin: 0;
+    }
+  }
+
+  .navigation-logo {
+    @extend .mht;
+
+    background-image: url('../../../assets/images/logo.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: inline-block;
+    height: 100%;
+    width: 5.875rem;
+
+    @include mobile {
+      width: 7.5rem;
+    }
+  }
+
+  .navigation-link {
+    @extend .pas;
+    @extend .flex-row;
+    @extend .flex-vc;
+
+    a {
+      @extend .flex-row;
+      @extend .flex-vc;
+    }
+
+    i {
+      @extend .color-primary-brand;
+      @extend .t2;
+      @extend .mlt;
+
+      margin-right: 1.2rem;
+    }
+
+    span {
+      @extend .mrs;
+      display: block;
+    }
+
+    &.navigation-link-bordered {
+      @include gt-mobile {
+        border-left: 2px solid map_get($color-map, 'light-blue');
+      }
+    }
+  }
+}
+
+.navigation-transparent {
+  #navigation-toggle {
+    @extend .color-white;
+  }
+
+  #navigation-menu {
+    color: transparent;
+    background-color: transparent;
+    border-color: transparent;
+
+    .navigation-link, .navigation-link-bordered {
+      border-color: transparent;
+
+      a {
+        @extend .color-white;
+
+        &:hover {
+          @extend .color-highlight-white;
+        }
+      }
+    }
+  }
+}

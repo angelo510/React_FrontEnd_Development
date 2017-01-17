@@ -1,0 +1,127 @@
+.input-text {
+  background-color: inherit;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: .125rem solid map_get($color-map, 'lighter-grey');
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+
+  @extend .color-dark-grey;
+  @extend .pat;
+  @extend .mvm;
+  @extend .mht;
+
+  &:focus, &:hover {
+    color: map_get($color-map, 'primary-brand');
+    border-color: map_get($color-map, 'primary-brand');
+  }
+
+  @include gt-mobile() {
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+input::-webkit-input-placeholder {
+  color: map_get($color-map, 'light-grey');
+  text-overflow: ellipsis;
+  opacity: 1;
+  transition: all .5s ease;
+  bottom: 0;
+  position: relative
+}
+
+input::-moz-placeholder {
+  color: map_get($color-map, 'light-grey');
+  text-overflow: ellipsis;
+  opacity: 1;
+  transition: all .5s ease;
+  bottom: 0;
+  position: relative
+}
+
+input:-moz-placeholder {
+  color: map_get($color-map, 'light-grey');
+  text-overflow: ellipsis;
+  opacity: 1;
+  transition: all .5s ease;
+  bottom: 0;
+  position: relative
+}
+
+input:-ms-input-placeholder {
+  color: map_get($color-map, 'light-grey');
+  text-overflow: ellipsis;
+  opacity: 1;
+  transition: all .5s ease;
+  bottom: 0;
+  position: relative
+}
+
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  color: transparent;
+  bottom: -1.8rem;
+  font-size: 0.75rem
+}
+
+input:focus::-moz-placeholder {
+  opacity: 0;
+  color: transparent;
+  bottom: -1.8rem;
+  font-size: 0.75rem
+}
+
+input:focus:-moz-placeholder {
+  opacity: 0;
+  color: transparent;
+  bottom: -1.8rem;
+  font-size: 0.75rem
+}
+
+input:focus:-ms-input-placeholder {
+  opacity: 0;
+  color: transparent;
+  bottom: -1.8rem;
+  font-size: 0.75rem
+}
+
+.select-text {
+  border-bottom: .125rem solid map_get($color-map, 'lighter-grey');
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+
+  @extend .color-dark-grey;
+
+  &.is-open, &:hover {
+    border-color: map_get($color-map, 'primary-brand');
+  }
+
+  .select-text__option {
+    @extend .pht;
+    @extend .pvs;
+    @extend .full-width;
+
+    &:hover {
+      @extend .color-white;
+      @extend .color-bg-primary-brand;
+    }
+  }
+
+  .Select-arrow-zone {
+    display: none;
+  }
+
+  .Select-control {
+    @extend .mat;
+    box-shadow: none !important;
+    cursor: pointer;
+  }
+  .Select-control:hover {
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,38 @@
+.search {
+  @extend .mrs;
+
+  .search__search-field {
+    @extend .flex-row;
+    @extend .flex-hc;
+    position: relative;
+
+    input[type='search'] {
+      @extend .color-bd-lighter-grey;
+      border-radius: 2rem;
+      max-width: 13rem;
+      padding-top: .3rem;
+      padding-bottom: .3rem;
+      padding-left: 1.875rem;
+      padding-right: 1.875rem;
+    }
+
+    button {
+      position: absolute;
+      right: 1rem;
+      top: 0.4rem;
+    }
+  }
+}
+
+.navigation-transparent {
+  .search {
+    @extend .color-white;
+
+    .search__search-field {
+      input[type='search'] {
+        @extend .color-bd-white;
+        background-color: transparent;
+      }
+    }
+  }
+}

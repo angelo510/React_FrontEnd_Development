@@ -1,0 +1,29 @@
+.venue-results {
+  @extend .mhm-desktop;
+
+  min-height: 28rem;
+}
+
+.venue-results-grid {
+  @media (max-width: $desktop-width) and (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    > div {
+      flex: 1 0 50%;
+      max-width: 50%;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    > div {
+      flex: 1 0 33.3333%;
+      max-width: 33.3333%;
+    }
+  }
+}

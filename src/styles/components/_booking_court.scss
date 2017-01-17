@@ -1,0 +1,70 @@
+@mixin booking-court-theme($color, $background-color) {
+  color: $color;
+  background-color: $background-color;
+
+  &:hover {
+    color: $background-color;
+    background-color: $color;
+
+    .price-bubble:before {
+      color: $background-color;
+    }
+
+    .price-bubble__currency,
+    .price-bubble__amount {
+      color: $color;
+    }
+  }
+}
+
+.booking-court {
+  @extend .flex-row;
+  @extend .pat;
+  @extend .mts;
+  @extend .mls;
+  @extend .t5;
+  @extend .text-uc;
+
+  border-radius: .2rem;
+  cursor: pointer;
+  position: relative;
+  width: 15rem;
+  z-index: 2;
+
+  @include booking-court-theme(map_get($color-map, 'primary-brand'), map_get($color-map, 'light-blue'));
+
+  @include mobile() {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  &.selected {
+    @include booking-court-theme(map_get($color-map, 'white'), map_get($color-map, 'primary-brand'));
+
+    &:before {
+      @extend .color-white;
+
+      content: $icon-hex-close;
+      font-family: playven-icons, serif;
+      font-size: 1rem;
+      position: absolute;
+      z-index: 1;
+      right: -0.5rem;
+      top: -.5rem;
+    }
+
+    .price-bubble:before {
+      @extend .color-white;
+    }
+
+    .price-bubble__currency,
+    .price-bubble__amount {
+      @extend .color-primary-brand;
+    }
+  }
+
+  .booking-court__duration {
+    @extend .color-light-grey;
+    @extend .t5;
+  }
+}
