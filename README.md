@@ -146,11 +146,11 @@ Use the postfixes -mobile, -tablet, -desktop, -gt-mobile, -lt-desktop to describ
 
 ## Icons
 
-Prefer including icons by using the playven-icons font, which can be updated using the [IcoMoon](https://icomoon.io/) app. 
+Prefer including icons by using the icons font, which can be updated using the [IcoMoon](https://icomoon.io/) app. 
 
 ### Usage 
 
-Look at src/styles/base/_playven_icons.scss for the list of available icons. You can control the icon size and color through the css properties font-size and color. 
+Look at src/styles/base/__icons.scss for the list of available icons. You can control the icon size and color through the css properties font-size and color. 
 
 * HTML:
   ```html
@@ -172,5 +172,5 @@ In order to use an svg in an icon font, it must only have a single color, and al
 Once the set has been updated, select all the icons in the set and click 'Generate Font' at the bottom right of the screen. Click download to generate the updated font files. The generated files mentioned below should be placed in the following locations: 
 
 * selection.json -> src/assets/icon/icomoon/selection.json
-* fonts/* -> src/styles/fonts/playven_icons/
-* Update src/styles/base/_playven_icons.scss with the content of variables.scss and styles.scss. Ensure the paths all point to ../../fonts/playven_icons
+* fonts/* -> src/styles/fonts/_icons/
+* Update src/styles/base/__icons.scss with the content of variables.scss and styles.scss. Ensure the paths all point to ../../fonts/_icons
