@@ -33,7 +33,7 @@ axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded
 //TODO: move dispatches to 'actions' and keep only ajax calls here
 
 // Auth.configure({
-//   apiUrl: 'https://dev.playven.com/api',
+//   apiUrl: 'https://dev.mywebsite.com/api',
 //   authProviderPaths: {
 //     facebook: '/auth/facebook'
 //   },
@@ -52,7 +52,7 @@ export function login(params) {
 
     return axios({
       method: 'POST',
-      url: `${api_endpoints.playven}/authenticate`,
+      url: `${api_endpoints.mywebsite}/authenticate`,
       params: credentials
     }).then(res => {
       const token = res.data.auth_token
@@ -113,7 +113,7 @@ export function register(paramsOrModal) {
 
     return axios({
       method: 'POST',
-      url: `${api_endpoints.playven}/users`,
+      url: `${api_endpoints.mywebsite}/users`,
       data: credentials
     }).then(res => {
       const token = res.data.auth_token
@@ -169,7 +169,7 @@ export const update = (credentials, userId) => {
 
     return axios({
       method: 'PUT',
-      url: `${api_endpoints.playven}/users/` + userId,
+      url: `${api_endpoints.mywebsite}/users/` + userId,
       data: reqBody
     }).then(res => {
       if (res.status == 200) {
@@ -203,7 +203,7 @@ export function forgotPassword(params) {
     dispatch(onForgotPasswordRequest())
     return axios({
       method: 'POST',
-      url: `${api_endpoints.playven}/users/reset_password`,
+      url: `${api_endpoints.mywebsite}/users/reset_password`,
       data: params
     }).then(res => {
       if(res.status==200) {
@@ -266,7 +266,7 @@ export function updatePassword(credentials, userId) {
 
     return axios({
       method: 'PUT',
-      url: `${api_endpoints.playven}/users/` + userId,
+      url: `${api_endpoints.mywebsite}/users/` + userId,
       data: reqBody
     }).then(res => {
       dispatch(togglePasswordUpdate())
@@ -285,7 +285,7 @@ export function resendConfirmationEmail(emailObj) {
 
     return axios({
       method: 'POST',
-      url: `${api_endpoints.playven}/users/confirm_account_email`,
+      url: `${api_endpoints.mywebsite}/users/confirm_account_email`,
       data: emailObj
     }).then(res => {
       if(res.status==200) {
@@ -328,7 +328,7 @@ export function createPassword (credentials, location) {
     dispatch(onCreatePasswordRequest())
     return axios({
       method: 'POST',
-      url: `${api_endpoints.playven}/users/confirm_account`,
+      url: `${api_endpoints.mywebsite}/users/confirm_account`,
       data: reqBody
     }).then(res => {
       if(res.status==200) {
