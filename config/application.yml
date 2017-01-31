@@ -5,7 +5,7 @@
 # pusher_secret: abdc3b896a0ffb85d373
 # stripe_api_key: sk_test_2J0l093xOyW72XUYJHE4Dv2r
 # stripe_publishable_key: pk_test_ro9jV5SNwGb1yYlQfzG17LHK
-MAILER_HOST: "rc.playven.com"
+MAILER_HOST: "rc.mywebsite.com"
 S3_BUCKET_NAME: "test-images.ampersports.com"
 AWS_ACCESS_KEY_ID: "AKIAIRL6COFAOB2EOC4Q"
 AWS_SECRET_ACCESS_KEY: "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"

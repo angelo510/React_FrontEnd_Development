@@ -17,4 +17,4 @@ deployment:
   prod:
     branch: master
     commands:
-      - aws s3 sync dist s3://playven.com --delete
+      - aws s3 sync dist s3://mywebsite.com --delete

@@ -2,15 +2,15 @@ const env = process.env.NODE_ENV || 'development';
 
 const apis_by_environment = {
   development : {
-    playven : 'http://localhost:3000/api',
+    mywebsite : 'http://localhost:3000/api',
     assets : 'http://localhost:3000'
   },
   test : {
-    playven : 'http://localhost:3000/api'
+    mywebsite : 'http://localhost:3000/api'
   },
   production : {
-    playven : 'https://rc.playven.com/api',
-    assets : 'https://rc.playven.com'
+    mywebsite : 'https://rc.mywebsite.com/api',
+    assets : 'https://rc.mywebsite.com'
   }
 }
 
