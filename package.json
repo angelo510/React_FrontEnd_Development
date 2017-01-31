@@ -1,5 +1,5 @@
 {
-  "name": "playven-frontend",
+  "name": "mywebsite-frontend",
   "version": "0.0.1",
   "description": "Your sports companion",
   "main": "index.js",
@@ -82,7 +82,7 @@
     "type": "git",
     "url": "git+https://github.com/davezuko/react-redux-starter-kit.git"
   },
-  "author": "Miró Sorja <miro@playven.com> (http://playven.com)",
+  "author": "Miró Sorja <miro@mywebsite.com> (http://mywebsite.com)",
   "license": "MIT",
   "dependencies": {
     "axios": "^0.14.0",
