@@ -11,7 +11,7 @@ export const getUserReservations = () => (dispatch, getState) => {
   const state = getState();
   const future = state.profile.future
 
-  const url = `${api_endpoints.playven}/reservations.json`
+  const url = `${api_endpoints.mywebsite}/reservations.json`
   console.log(url)
   return axios.get(url)
     .then(res => {
