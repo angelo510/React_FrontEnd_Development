@@ -2,9 +2,9 @@ pages:
   home:
     main_title: "YOUR SPORTS COMPANION"
     main_subtitle: "Find nearby tennis courses and reserve with ease"
-    join_header: "Book your game times for racket sports with Playven"
-    join_content: "Playven is the easiest way to find available courts in your area. You can book available courts in all nearby joined clubs with our easy search. We hope you enjoy Playven!"
-    join_button: "JOIN PLAYVEN"
+    join_header: "Book your game times for racket sports with mywebsite"
+    join_content: "mywebsite is the easiest way to find available courts in your area. You can book available courts in all nearby joined clubs with our easy search. We hope you enjoy mywebsite!"
+    join_button: "JOIN mywebsite"
     sports_list: "Venues in Helsinki"
   profile:
     navigation:

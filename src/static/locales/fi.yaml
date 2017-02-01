@@ -2,9 +2,9 @@ pages:
   home:
     main_title: "SINUN TENNISKENTTÄSI"
     main_subtitle: "Löydä vapaat kentät läheltäsi ja varaa helposti"
-    join_header: "Playven on uusi tapa löytää lähialueesi vapaat tenniskentät ja tehdä varaus helposti"
-    join_content: "Playven on pilottivaiheessa ja olemme aloittaneet palvelun ensimmäisenä mm. Kalastatorpan Tennisklubin, Aktia-Tennishallin, ja Martinmäen Tenniskeskuksen kanssa. Uusia keskuksia liittyy mukaan jatkuvasti. Voit auttaa meitä saamaan useampia mukaan kertomalla Playvenista sinun suosikkipaikallesi."
-    join_button: "Liity Playveniin"
+    join_header: "mywebsite on uusi tapa löytää lähialueesi vapaat tenniskentät ja tehdä varaus helposti"
+    join_content: "mywebsite on pilottivaiheessa ja olemme aloittaneet palvelun ensimmäisenä mm. Kalastatorpan Tennisklubin, Aktia-Tennishallin, ja Martinmäen Tenniskeskuksen kanssa. Uusia keskuksia liittyy mukaan jatkuvasti. Voit auttaa meitä saamaan useampia mukaan kertomalla mywebsiteista sinun suosikkipaikallesi."
+    join_button: "Liity mywebsiteiin"
     sports_list: "Keskuksia Helsingissä"
   profile:
     navigation:
