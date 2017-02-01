@@ -17,7 +17,7 @@
     @extend .color-lighter-grey;
 
     content: $icon-calendar;
-    font-family: playven-icons, serif;
+    font-family: mywebsite-icons, serif;
     position: absolute;
     top: 0.7rem;
     right: 1.15rem;
@@ -66,7 +66,7 @@
       @extend .color-primary-brand;
 
       content: $icon-hex;
-      font-family: playven-icons, serif;
+      font-family: mywebsite-icons, serif;
       font-size: 1.875rem;
       position: absolute;
       right: 0;
