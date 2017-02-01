@@ -16,7 +16,7 @@ export const bookWithoutPayment = (duration, date) => {
       const start_time = moment.utc(date, 'DD/MM/YYYY').add(activeSlot, 'minutes');
       return ({ id: court.id, price: court.price, start_time, duration })
     });
-    return axios.post(`${api_endpoints.playven}/reservations`, {
+    return axios.post(`${api_endpoints.mywebsite}/reservations`, {
       duration,
       date,
       bookings: JSON.stringify(bookings),
@@ -45,7 +45,7 @@ export const pay = (duration, date) => {
       return ({ id: court.id, price: court.price, start_time, duration })
     });
     dispatch(toggleLoaded());
-    return axios.post(`${api_endpoints.playven}/reservations`, {
+    return axios.post(`${api_endpoints.mywebsite}/reservations`, {
       duration,
       date,
       bookings: JSON.stringify(bookings),
@@ -68,7 +68,7 @@ export const pay = (duration, date) => {
 export const getCards = () => {
   return dispatch => {
     dispatch(toggleLoaded());
-    return axios.get(`${api_endpoints.playven}/cards.json`)
+    return axios.get(`${api_endpoints.mywebsite}/cards.json`)
     .then(resp => {
       dispatch(toggleLoaded());
       resp.data.cards !== null && dispatch(saveCards(resp.data.cards.data));
@@ -84,7 +84,7 @@ export const getCards = () => {
 export const addCard = token => {
   return (dispatch) => {
     dispatch(toggleLoaded());
-    return axios.post(`${api_endpoints.playven}/cards`, {
+    return axios.post(`${api_endpoints.mywebsite}/cards`, {
       token: token.id
     })
     .then(resp => {
@@ -103,7 +103,7 @@ export const addCard = token => {
 
 export const cancelReservation = reservation => {
   return dispatch => {
-    axios.delete(`${api_endpoints.playven}/reservations/${reservation.id}`)
+    axios.delete(`${api_endpoints.mywebsite}/reservations/${reservation.id}`)
     .then(({data}) => {
       toastr.success(data.message);
       dispatch(cancelReservationSuccess(reservation));
@@ -118,7 +118,7 @@ export const cancelReservation = reservation => {
 
 export const resellReservation = reservation => {
   return dispatch => {
-    axios.get(`${api_endpoints.playven}/reservations/${reservation.id}/resell.json`)
+    axios.get(`${api_endpoints.mywebsite}/reservations/${reservation.id}/resell.json`)
     .then(({data}) => {
       toastr.success(data.message);
       dispatch(resellReservationSuccess(reservation));

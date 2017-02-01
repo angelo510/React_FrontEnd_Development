@@ -14,7 +14,7 @@ import api_endpoints from '../../config/apis'
  */
 
 export function getVenues(sport = '') {
-  return (dispatch, getState) => axios.get(`${api_endpoints.playven}/venues.json?sport=${sport}`)
+  return (dispatch, getState) => axios.get(`${api_endpoints.mywebsite}/venues.json?sport=${sport}`)
       .then(response => {
         dispatch(getVenueSuccess(response.data.venues))
         return response
@@ -22,7 +22,7 @@ export function getVenues(sport = '') {
 }
 
 export function loadVenue(venue_id) {
-  return (dispatch, getState) => axios.get(`${api_endpoints.playven}/venues/${venue_id}.json`)
+  return (dispatch, getState) => axios.get(`${api_endpoints.mywebsite}/venues/${venue_id}.json`)
       .then(response => {
         dispatch(onVenueLoad(response.data))
         return response
@@ -34,7 +34,7 @@ export const fetchSingleVenue = params => {
 
   return dispatch => {
     dispatch(toggleLoaded());
-    return axios.get(`${api_endpoints.playven}/venues/${venue_id}/available_courts.json`, {
+    return axios.get(`${api_endpoints.mywebsite}/venues/${venue_id}/available_courts.json`, {
       params: {
         date,
         time,
@@ -55,7 +55,7 @@ export const fetchSingleVenue = params => {
  */
 
 export function getSportNames() {
-  return (dispatch, getState) => axios.get(`${api_endpoints.playven}/all_sport_names.json`)
+  return (dispatch, getState) => axios.get(`${api_endpoints.mywebsite}/all_sport_names.json`)
       .then(response => {
         dispatch(getSportNameSuccess(response.data))
         return response
