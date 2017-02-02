@@ -13,7 +13,7 @@ const ForgotPassword = ({ show, handleHide, forgotPassword, onSuccess, isResetPa
     <Modal.Body>
       <div className="flex-col pal pam-mobile">
         <div className='flex-row flex-hc'>
-          <i className='icon-logo-playven color-primary-brand'/>
+          <i className='icon-logo-mywebsite color-primary-brand'/>
         </div>
         <ForgotPasswordForm onSubmit={credentials => {forgotPassword(credentials)}} buttonState={isResetPassword}/>
       </div>

@@ -4,7 +4,7 @@ const BookingModalVenueSportList = props => {
   const { sport, icons, venueSports, changeSport, submitSearch, sportsListVisible, toggleSportsList } = props;
   const remainingSports = venueSports.filter(matchingSport => matchingSport !== sport);
   let modifiedIcons = {};
-  icons.forEach(icon => modifiedIcons[icon.sport] = { active: `https://rc.playven.com/${icon.url.active}`, inactive: `https://rc.playven.com/${icon.url.inactive}`});
+  icons.forEach(icon => modifiedIcons[icon.sport] = { active: `https://rc.mywebsite.com/${icon.url.active}`, inactive: `https://rc.mywebsite.com/${icon.url.inactive}`});
   let onClick;
   if (remainingSports.length) {
     onClick = toggleSportsList
