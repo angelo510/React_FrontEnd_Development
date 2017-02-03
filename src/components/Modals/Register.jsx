@@ -13,7 +13,7 @@ const Register = ({show, onChange, handleHide, facebookLogin, register, open, on
     <Modal.Body>
       <div className='flex-col pal pam-mobile'>
         <div className='flex-row flex-hc'>
-          <i className='icon-logo-playven color-primary-brand'/>
+          <i className='icon-logo-mywebsite color-primary-brand'/>
         </div>
 
         <RegistrationForm onSubmit={credentials => register({credentials, onSuccess})}/>
