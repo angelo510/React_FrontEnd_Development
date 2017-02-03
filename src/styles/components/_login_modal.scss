@@ -1,5 +1,5 @@
 .login-modal {
-  .icon-logo-playven {
+  .icon-logo-mywebsite {
     @extend .mbt;
     font-size: 2.25rem;
   }
@@ -46,7 +46,7 @@
         &:before {
           @extend .color-white;
           content: $icon-hex;
-          font-family: playven-icons, serif;
+          font-family: mywebsite-icons, serif;
           font-size: 2rem;
           position: absolute;
           z-index: -1;
