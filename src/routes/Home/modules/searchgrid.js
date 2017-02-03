@@ -24,7 +24,7 @@ export function onFetching() {
 
 export const getSearchResults = queryParams =>
   axios
-    .get(`${api_endpoints.playven}/search.json`, { params: queryParams })
+    .get(`${api_endpoints.mywebsite}/search.json`, { params: queryParams })
     .catch(err => toastr.error(err))
 
 // TODO: move to api
