@@ -1,6 +1,6 @@
-$icon-path: "../../fonts/playven_icons/";
+$icon-path: "../../fonts/mywebsite_icons/";
 
-$icon-logo-playven: "\e920";
+$icon-logo-mywebsite: "\e920";
 $icon-logo-paddle: "\e921";
 $icon-logo: "\e912";
 $icon-down-arrow: "\e900";
@@ -51,19 +51,19 @@ $icon-cross: "\ea10";
 $icon-circle-up: "\ea41";
 
 @font-face {
-  font-family: 'playven-icons';
-  src:  url('../../fonts/playven_icons/playven-icons.eot?5krpy5');
-  src:  url('../../fonts/playven_icons/playven-icons.eot?5krpy5#iefix') format('embedded-opentype'),
-  url('../../fonts/playven_icons/playven-icons.ttf?5krpy5') format('truetype'),
-  url('../../fonts/playven_icons/playven-icons.woff?5krpy5') format('woff'),
-  url('../../fonts/playven_icons/playven-icons.svg?5krpy5#playven-icons') format('svg');
+  font-family: 'mywebsite-icons';
+  src:  url('../../fonts/mywebsite_icons/mywebsite-icons.eot?5krpy5');
+  src:  url('../../fonts/mywebsite_icons/mywebsite-icons.eot?5krpy5#iefix') format('embedded-opentype'),
+  url('../../fonts/mywebsite_icons/mywebsite-icons.ttf?5krpy5') format('truetype'),
+  url('../../fonts/mywebsite_icons/mywebsite-icons.woff?5krpy5') format('woff'),
+  url('../../fonts/mywebsite_icons/mywebsite-icons.svg?5krpy5#mywebsite-icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'playven-icons' !important;
+  font-family: 'mywebsite-icons' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -76,9 +76,9 @@ $icon-circle-up: "\ea41";
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-logo-playven {
+.icon-logo-mywebsite {
   &:before {
-    content: $icon-logo-playven;
+    content: $icon-logo-mywebsite;
   }
 }
 .icon-logo-paddle {
