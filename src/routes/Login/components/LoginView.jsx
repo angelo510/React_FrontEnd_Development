@@ -40,7 +40,7 @@ const onLoginSuccess = (user) => {
 
 
 Auth.configure({
-  apiUrl: 'https://rc.playven.com/api',
+  apiUrl: 'https://rc.mywebsite.com/api',
   authProviderPaths: {
     facebook: '/auth/facebook'
   }
