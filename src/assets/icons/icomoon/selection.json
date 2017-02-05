@@ -18,7 +18,7 @@
         "isMulticolor2": false,
         "grid": 16,
         "tags": [
-          "logo-playven"
+          "logo-mywebsite"
         ],
         "colorPermutations": {
           "102102102113125255114125255115916517311611325511831831831240243253124124425412421091251255255255133374514141801": [
@@ -50,7 +50,7 @@
       "properties": {
         "order": 146,
         "id": 106,
-        "name": "logo-playven",
+        "name": "logo-mywebsite",
         "prevSize": 32,
         "code": 59680
       },
@@ -3049,7 +3049,7 @@
   ],
   "height": 1024,
   "metadata": {
-    "name": "playven-icons"
+    "name": "mywebsite-icons"
   },
   "preferences": {
     "showGlyphs": true,
@@ -3059,7 +3059,7 @@
     "fontPref": {
       "prefix": "icon-",
       "metadata": {
-        "fontFamily": "playven-icons",
+        "fontFamily": "mywebsite-icons",
         "majorVersion": 1,
         "minorVersion": 0
       },
@@ -3088,7 +3088,7 @@
     "showCodes": true,
     "gridSize": 16,
     "quickUsageToken": {
-      "Playven": "YWZhODY2OGZlODBhNzUxNjg5ODYwMGM2N2Y2MGFkMGYjMSMxNDgwODUwNjY3IyMj"
+      "mywebsite": "YWZhODY2OGZlODBhNzUxNjg5ODYwMGM2N2Y2MGFkMGYjMSMxNDgwODUwNjY3IyMj"
     },
     "showGrid": true
   }
