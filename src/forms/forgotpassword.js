@@ -21,7 +21,18 @@ const ForgotPasswordForm = (props) => {
       </div>
 
 
-      
+      <fieldset className="form-group form-group_btns">
+        <LaddaButton
+          data-style={SLIDE_UP}
+          loading={buttonState}
+          type="submit"
+          disabled={pristine || submitting}
+          className="btn btn-primary btn-block"
+          style={{height: '50px', backgroundColor: '#0e7dff', borderColor: '#0e7dff'}}>
+            <Text text="modals.login.reset_password_instructions" />
+        </LaddaButton>
+      </fieldset>
+    </form>
   )
 }
 
