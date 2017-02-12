@@ -10,6 +10,18 @@ const ForgotPasswordForm = (props) => {
       <fieldset className="form-group">
         <h2 style={{textAlign: 'center', color: 'white'}}><Text text="modals.login.forgot_your_password" /></h2>
       </fieldset>
+
+      <div className="flex-row">
+        <Field
+          name="email"
+          component="input"
+          type="email"
+          placeholder="Email"
+          className="input-text flex" />
+      </div>
+
+
+      
   )
 }
 
